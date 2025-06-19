@@ -1,113 +1,81 @@
-# A2A (Agent-to-Agent) Communication Framework
+# MCP (Model Code Protocol) Test Repository
 
-## 개요
-A2A(Agent-to-Agent)는 AI 에이전트들 간의 효과적인 커뮤니케이션을 위한 프레임워크입니다. 이 프레임워크는 AI 에이전트들이 서로 협력하여 복잡한 작업을 수행할 수 있도록 돕습니다.
+이 저장소는 MCP(Model Code Protocol)의 기능을 테스트하고 예시를 제공하기 위한 저장소입니다.
 
-> 이 프로젝트는 Cursor AI와 MCP(Multi-agent Collaboration Platform)를 활용하여 개발되었습니다.
+## MCP란?
 
-## 주요 특징
+MCP는 AI 모델과 코드 간의 상호작용을 위한 프로토콜입니다. 이를 통해 AI가 코드를 이해하고, 수정하고, 생성할 수 있습니다. 본 프로젝트는 Cursor AI와 MCP를 활용하여 개발되었습니다.
+
+## 저장소 구조
+
+이 저장소는 다음과 같은 예시 파일들을 포함하고 있습니다:
+
+### 1. 프롬프트 및 리소스
+- `Prompt_예시.md`: 다양한 상황별 프롬프트 예시 (분석, 생성, 문제 해결, 대화형)
+- `Resource_예시.md`: 다양한 리소스 타입 예시 (이미지, 문서, 데이터셋, 웹 콘텐츠)
+- `Resource_Examples.md`: 실제 활용 가능한 리소스 목록
+
+### 2. 도구 및 시각화
+- `Tool_예시.md`: 다양한 도구 사용 예시 (코드 실행, 검색, 계산기, 파일 시스템, API)
+- `MCP_Diagram.svg`: MCP 시스템 구조 다이어그램
+- `MCP_Overview.md`: MCP의 개요와 주요 기능 설명
+
+## 주요 기능
+
 1. **구조화된 통신 프로토콜**
    - 명확한 메시지 포맷
    - 표준화된 요청/응답 구조
    - 에러 처리 메커니즘
 
-2. **역할 기반 상호작용**
-   - 전문화된 에이전트 역할 정의
-   - 작업 분배 및 조정
-   - 효율적인 협업 시스템
+2. **리소스 관리**
+   - 다양한 형식의 리소스 지원 (이미지, 문서, 데이터셋 등)
+   - 효율적인 리소스 로딩 및 처리
+   - 메타데이터 관리
 
-3. **작업 관리**
-   - 작업 우선순위 설정
-   - 진행 상황 모니터링
-   - 결과 검증 및 피드백
+3. **도구 통합**
+   - 코드 실행 환경
+   - 외부 API 연동
+   - 파일 시스템 접근
 
-## 구현 예시
-### 기본 메시지 구조
-```python
-@dataclass
-class Message:
-    message_id: str
-    sender: str
-    receiver: str
-    message_type: str
-    content: Dict[str, Any]
-    timestamp: str
-```
+## 설정 방법
 
-### 기본 에이전트 클래스
-```python
-class Agent:
-    def __init__(self, agent_id: str, specialization: str):
-        self.agent_id = agent_id
-        self.specialization = specialization
-        self.status = "active"
-        self.current_task = None
-        self.message_queue = []
-```
-
-### 특화된 에이전트 예시
-```python
-class DataCollectorAgent(Agent):
-    def __init__(self, agent_id: str):
-        super().__init__(agent_id, "데이터 수집")
-        self.data_sources = {
-            "sales_data": "sales_database",
-            "customer_data": "customer_database"
-        }
-
-class DataAnalyzerAgent(Agent):
-    def __init__(self, agent_id: str):
-        super().__init__(agent_id, "데이터 분석")
-        self.analysis_methods = {
-            "trend": self.analyze_trend,
-            "clustering": self.analyze_clustering
-        }
-```
-
-## 사용 방법
-1. 필요한 패키지 설치:
-```bash
-pip install -r requirements.txt
-```
-
-2. 에이전트 생성 및 실행:
-```python
-# 특화된 에이전트 생성
-collector = DataCollectorAgent("collector1")
-analyzer = DataAnalyzerAgent("analyzer1")
-
-# 데이터 수집 요청
-collection_request = collector.create_message(
-    receiver="collector1",
-    message_type="task_request",
-    content={
-        "task_id": "collect_001",
-        "task": "데이터 수집",
-        "parameters": {
-            "dataset": "sales_data"
-        }
+1. MCP 설정 파일 생성 (`mcp.json`):
+```json
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/github",
+        "--key",
+        "YOUR_KEY_HERE"
+      ]
     }
-)
-collector.receive_message(collection_request)
+  }
+}
 ```
 
-## 프로젝트 구조
-- `agent.py`: 기본 에이전트 클래스와 메시지 구조 정의
-- `specialized_agents.py`: 특화된 에이전트 구현 (데이터 수집, 분석 등)
-- `requirements.txt`: 필요한 Python 패키지 목록
+2. 필요한 패키지 설치:
+```bash
+npm install -g @smithery/cli
+```
 
-## 개발 환경
-- Python 3.8+
-- Cursor AI: 코드 작성 및 리뷰
-- MCP (Multi-agent Collaboration Platform): 에이전트 간 통신 프레임워크 개발
+## 사용 예시
 
-## 향후 발전 방향
-- 머신러닝 기반 최적화
-- 실시간 적응형 통신 프로토콜
-- 확장 가능한 에이전트 네트워크 구조
+각 예시 파일에는 상세한 사용 방법과 예제가 포함되어 있습니다. 특히:
+- 프롬프트 작성 방법
+- 리소스 활용 방법
+- 도구 사용 방법
+- 시스템 구조 이해
 
-## 기여 방법
-이 프로젝트에 기여하고 싶으시다면:
-1. 이슈 등록
-2. 풀 리퀘스트 제출
-3. 문서화 개선 
+## 주의사항
+
+- API 키와 같은 민감한 정보는 반드시 안전하게 관리해야 합니다.
+- 실제 프로덕션 환경에서는 환경 변수 등을 활용하여 키를 관리하는 것을 추천합니다.
+
+## 라이선스
+
+MIT License 
