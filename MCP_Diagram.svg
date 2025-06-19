@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f7fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">모델 컨텍스트 프로토콜 (MCP)</text>
+  
+  <!-- Center LLM Model -->
+  <circle cx="400" cy="250" r="80" fill="#6366f1" opacity="0.9"/>
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="white">LLM</text>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">대규모 언어 모델</text>
+  
+  <!-- Resources Box -->
+  <rect x="100" y="180" width="160" height="140" rx="10" ry="10" fill="#22c55e" opacity="0.8"/>
+  <text x="180" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Resource</text>
+  <text x="180" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 문서 데이터베이스</text>
+  <text x="180" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 웹 콘텐츠</text>
+  <text x="180" y="275" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 구조화된 데이터</text>
+  <text x="180" y="295" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 개인 지식 저장소</text>
+  
+  <!-- Tools Box -->
+  <rect x="540" y="180" width="160" height="140" rx="10" ry="10" fill="#f59e0b" opacity="0.8"/>
+  <text x="620" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Tool</text>
+  <text x="620" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 검색 도구</text>
+  <text x="620" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 계산기</text>
+  <text x="620" y="275" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• API 호출</text>
+  <text x="620" y="295" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 코드 실행기</text>
+  
+  <!-- Prompt Box -->
+  <rect x="320" y="400" width="160" height="140" rx="10" ry="10" fill="#ef4444" opacity="0.8"/>
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Prompt</text>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 역할 정의</text>
+  <text x="400" y="475" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 작업 지침</text>
+  <text x="400" y="495" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 출력 형식</text>
+  <text x="400" y="515" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• 제약 조건</text>
+  
+  <!-- Connection Lines -->
+  <line x1="260" y1="250" x2="320" y2="250" stroke="#333" stroke-width="2"/>
+  <line x1="480" y1="250" x2="540" y2="250" stroke="#333" stroke-width="2"/>
+  <line x1="400" y1="330" x2="400" y2="400" stroke="#333" stroke-width="2"/>
+  
+  <!-- Arrows -->
+  <polygon points="320,250 310,245 310,255" fill="#333"/>
+  <polygon points="540,250 530,245 530,255" fill="#333"/>
+  <polygon points="400,400 395,390 405,390" fill="#333"/>
+  
+  <!-- User Input -->
+  <rect x="300" y="80" width="200" height="50" rx="25" ry="25" fill="#3b82f6" opacity="0.8"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">사용자 입력</text>
+  <line x1="400" y1="130" x2="400" y2="170" stroke="#333" stroke-width="2"/>
+  <polygon points="400,170 395,160 405,160" fill="#333"/>
+  
+  <!-- Output -->
+  <rect x="300" y="560" width="200" height="50" rx="25" ry="25" fill="#3b82f6" opacity="0.8"/>
+  <text x="400" y="590" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">모델 응답</text>
+  <line x1="400" y1="540" x2="400" y2="560" stroke="#333" stroke-width="2"/>
+  <polygon points="400,560 395,550 405,550" fill="#333"/>
+  
+  <!-- Footer -->
+  <text x="400" y="640" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">© 2025 Model Context Protocol Diagram</text>
+</svg>
