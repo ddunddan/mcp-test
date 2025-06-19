@@ -1,26 +1,28 @@
-# 안녕하세요! 👋 
+# MCP Test Repository
 
-## 🌱 About Me
-얕고 넓게 다양한 관심사를 가지고 있습니다. AI와 데이터 선호중
+This repository is dedicated to testing and exploring the integration between Cursor AI and MCP (Model Code Protocol).
 
+## Purpose
+- Testing GitHub automation using Cursor AI and MCP
+- Exploring repository management capabilities
+- Documenting the integration process
 
-## 💻 Tech Stack
-```python
-tech_stack = {
-    "AI/ML": ["Python", "TensorFlow", "PyTorch", "LangChain"],
-    "Data Analysis": ["Pandas", "NumPy", "Scikit-learn"],
-    "Database": ["MySQL", "PostgreSQL"],
-    "Tools": ["Git", "Jupyter", "Colab", "Cursor"]
-}
-```
+## Features
+- Automated repository management
+- Integration testing
+- Documentation updates
 
-## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ddunddan&show_icons=true&theme=radical)
+## Getting Started
+To use this repository:
+1. Clone the repository
+2. Install required dependencies
+3. Follow the test procedures
 
-## 🌐 Contact & Links
-- 블로그: [니은니은니은 데이터공부](https://nthree.tistory.com/)
-- LinkedIn: [권순찬](https://www.linkedin.com/in/%EC%88%9C%EC%B0%AC-%EA%B6%8C-2a893928a/)
-- Email: elrnjs1396@gmail.com
+## Contributing
+Feel free to contribute to this test repository by:
+- Reporting issues
+- Suggesting improvements
+- Submitting pull requests
 
----
-⭐️ From [ddunddan](https://github.com/ddunddan) 
+## License
+This project is open source and available under the MIT License. 
