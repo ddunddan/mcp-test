@@ -1,104 +1,26 @@
-# MCP (Model Code Protocol) Test Repository
+# 안녕하세요! 👋 
 
-이 저장소는 Cursor AI와 MCP(Model Code Protocol)를 활용하여 GitHub 레포지토리 관리를 테스트하기 위한 저장소입니다.
+## 🌱 About Me
+얕고 넓게 다양한 관심사를 가지고 있습니다. AI와 데이터 선호중
 
-## 테스트 목적
 
-1. **Cursor AI 통합**
-   - Cursor AI를 통한 코드 작성 및 수정
-   - AI 기반 파일 관리 및 버전 관리
-   - 자동화된 문서화 및 주석 생성
-
-2. **MCP 기능 테스트**
-   - GitHub 레포지토리 자동 업데이트
-   - 파일 생성 및 수정 자동화
-   - 커밋 메시지 자동 생성
-
-## MCP란?
-
-MCP는 AI 모델과 코드 간의 상호작용을 위한 프로토콜입니다. 이를 통해 AI가 코드를 이해하고, 수정하고, 생성할 수 있습니다. 
-특히 이 레포지토리에서는 MCP를 활용하여 다음과 같은 작업을 자동화하는 것을 테스트합니다:
-
-- GitHub 레포지토리 생성 및 관리
-- 파일 업로드 및 수정
-- 문서화 자동화
-- 버전 관리 자동화
-
-## 저장소 구조
-
-이 저장소는 MCP 테스트를 위한 다양한 예시 파일들을 포함하고 있습니다:
-
-### 1. 프롬프트 및 리소스
-- `Prompt_예시.md`: 다양한 상황별 프롬프트 예시 (분석, 생성, 문제 해결, 대화형)
-- `Resource_예시.md`: 다양한 리소스 타입 예시 (이미지, 문서, 데이터셋, 웹 콘텐츠)
-- `Resource_Examples.md`: 실제 활용 가능한 리소스 목록
-
-### 2. 도구 및 시각화
-- `Tool_예시.md`: 다양한 도구 사용 예시 (코드 실행, 검색, 계산기, 파일 시스템, API)
-- `MCP_Diagram.svg`: MCP 시스템 구조 다이어그램
-- `MCP_Overview.md`: MCP의 개요와 주요 기능 설명
-
-## 주요 기능
-
-1. **GitHub 통합**
-   - 레포지토리 자동 관리
-   - 파일 버전 관리
-   - 문서화 자동화
-
-2. **리소스 관리**
-   - 다양한 형식의 리소스 지원 (이미지, 문서, 데이터셋 등)
-   - 효율적인 리소스 로딩 및 처리
-   - 메타데이터 관리
-
-3. **도구 통합**
-   - 코드 실행 환경
-   - 외부 API 연동
-   - 파일 시스템 접근
-
-## 설정 방법
-
-1. MCP 설정 파일 생성 (`mcp.json`):
-```json
-{
-  "mcpServers": {
-    "github": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@smithery-ai/github",
-        "--key",
-        "YOUR_KEY_HERE"
-      ]
-    }
-  }
+## 💻 Tech Stack
+```python
+tech_stack = {
+    "AI/ML": ["Python", "TensorFlow", "PyTorch", "LangChain"],
+    "Data Analysis": ["Pandas", "NumPy", "Scikit-learn"],
+    "Database": ["MySQL", "PostgreSQL"],
+    "Tools": ["Git", "Jupyter", "Colab", "Cursor"]
 }
 ```
 
-2. 필요한 패키지 설치:
-```bash
-npm install -g @smithery/cli
-```
+## 📊 GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ddunddan&show_icons=true&theme=radical)
 
-## 테스트 방법
+## 🌐 Contact & Links
+- 블로그: [니은니은니은 데이터공부](https://nthree.tistory.com/)
+- LinkedIn: [권순찬](https://www.linkedin.com/in/%EC%88%9C%EC%B0%AC-%EA%B6%8C-2a893928a/)
+- Email: elrnjs1396@gmail.com
 
-1. **Cursor AI 연동**
-   - Cursor AI 설치 및 설정
-   - GitHub 계정 연동
-   - MCP 설정 파일 구성
-
-2. **자동화 테스트**
-   - 파일 생성/수정 테스트
-   - 커밋 자동화 테스트
-   - 문서화 자동화 테스트
-
-## 주의사항
-
-- API 키와 같은 민감한 정보는 반드시 안전하게 관리해야 합니다.
-- 실제 프로덕션 환경에서는 환경 변수 등을 활용하여 키를 관리하는 것을 추천합니다.
-- 테스트 목적의 레포지토리이므로, 실제 프로젝트에 적용 시에는 충분한 검증이 필요합니다.
-
-## 라이선스
-
-MIT License 
+---
+⭐️ From [ddunddan](https://github.com/ddunddan) 
